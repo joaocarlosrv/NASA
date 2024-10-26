@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-weight: 600;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 100%;  
+    overflow-x: hidden; 
+}
+#header {
+    position: relative;
+    width: 100%; 
+    height: 150px; 
+    background-image: url('./img/vecteezy_night-shining-starry-sky-blue-space-background-with-stars_10996178.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.background {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover;
+    display: block;
+}
+.nasa {
+    position: absolute;
+    justify-content: center;
+    height: 130px; 
+    top: 1px;    
+}
+#search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+    flex-wrap: wrap;  
+    padding: 0 10px;
+}  
+#search-input{
+    color: #0b3d91;
+    padding: 10px;
+    font-size: 16px;    
+    border: 1px solid #0b3d91;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#search-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0b3d91;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    
+}
+#images-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+.album{
+    cursor: pointer;
+    text-align: center;
+}
+.album img, .album video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.album .h2{
+    margin: 10px 0;
+    font-size: 16px;
+}
+#modal-description{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    max-width: 50%;
+}
+#modal-container{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+#modal-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+#close-modal{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    transition: background-color 0.3s;
+}
+#close-modal:hover{
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #search-input {
+        width: 80%; 
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #search-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #search-input {
+        width: 100%; 
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #search-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
