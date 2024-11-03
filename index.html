@@ -9,29 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<!-- Cabeçalho da Página -->
 <header>
     <div id="header">
-            <img src="./img/vecteezy_night-shining-starry-sky-blue-space-background-with-stars_10996178.jpg" alt="header-background" class="background">    
-            <img src="./img/logonasa.png" alt="logo-nasa" class="nasa">         
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Encontre Vídeos e Imagens da NASA">
-            <button id="search-button"><i class="fa fa-search"></i></button>                    
-        </div>
+        <img src="./img/vecteezy_night-shining-starry-sky-blue-space-background-with-stars_10996178.jpg" alt="header-background" class="background">    
+        <img src="./img/logonasa.png" alt="logo-nasa" class="nasa">         
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Encontre Vídeos e Imagens da NASA">
+        <button id="search-button"><i class="fa fa-search"></i></button>                    
     </div>
-    </header>
-
-<!-- Container para Imagens e Vídeos -->
+    </div>
+</header>
     <div id="images-container"></div>
-
-<!-- Modal para Exibir Imagens em Destaque -->
-    <div id="modal-container">
+        <div id="modal-container">
         <span id="close-modal" onclick="closeModal()">&times;</span>
         <img id="modal-image" src="" alt="Imagem em destaque">
         <p id="modal-description"></p>
     </div>
-
-<!-- Script JavaScript -->
-    <script src="scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

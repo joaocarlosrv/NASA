@@ -22,7 +22,6 @@ async function fetchMediaFromNasa(searchQuery) {
 //faz uma nova requisição GET ao link do recurso (imagem ou vídeos)
         const mediaData = await fetch(item.href).then(response => response.json()); 
         
-
 //pega o URL correto da mídia (imagem ou vídeos) com base no tipo de mídia
         const mediaUrl = getMediaUrl(mediaData, mediaType);
         const description = item.data[0].description;
